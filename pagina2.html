@@ -9,11 +9,12 @@
 <body style="color: #FFD400; background-color: black;">
 	<a href="index.html"><small><mark>Voltar para o Inicio</mark></small></a><br><hr>
 	<h1 align="center">Crie seu personagem</h1>
+	<center><small>* = obrigatório</small></center>
 	<form>
-		<label for="nome">Nome:</label><br>
+		<label for="nome">Nome*</label><br>
 			<input type="text" name="nome" min="1" required><br><br>
 
-		<label for="estreia">Estreia em:</label><br>
+		<label for="estreia"><u>Estreia*</u><label><br>
 			<input type="radio" name="estreia" id="newgeneration" checked>
 			<label for="newgeneration" a href="#newgeneration">New Generation</label><br>
 			<input type="radio" name="estreia" id="secondimpact">
@@ -21,7 +22,7 @@
 			<input type="radio" name="estreia" id="thirdstrike">
 			<label for="thirdstrike" a href="#thirdstrike">Third Strike</label><br><br>
 
-		<label for="arquetipo">Arquétipo:</label><br>
+		<label for="arquetipo"><u>Arquétipo (Base):</u></label><br>
 			<input type="checkbox" name="shoto" id="shoto">
 			<label for="shoto" a href="#shoto">Shoto<br>
 			<input type="checkbox" name="midrange" id="midrange">
@@ -31,8 +32,18 @@
 			<input type="checkbox" name="zoner" id="zoner">
 			<label for="zoner" a href="#zoner">Zoner<br><br>
 
-		<label for="cor">Cor Principal:</label><br>
-			<input type="color" value="#D12C08"><br>
+		<label for="cor"><u>Cor Principal*</u></label><br>
+			<input type="color" value="#D12C08"><br><br>
+
+		<label for="gameplay" a href="#gameplay"><u>Estio de ataque*</u><label><br>
+		<select name="gameplay" id="gameplay" multiple required>
+			<option value="socos">Socos</option>
+			<option value="chutes">Chutes</option>
+			<option value="agarroes">Agarrões</option>
+			<option value="projeteis">Projéteis</option>
+		</select><br>
+		<small><i><sub>(Segure Ctrl para selecionar vários)</sub></i></small><br>
+
 		<br><button type="submit"><b><u>Criar</u></b></button>
 	</form>
 </body>

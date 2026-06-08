@@ -5,23 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SFIII página 2</title>
 	<link rel="icon" type="text/css" href="rato.png" sizes="16x16" type="image/png">
-	</head>
-	<body style="color: #FFD400; background-color: black;">
-		<a href="index.html"><small><mark>Voltar para o Inicio</mark></small></a><br>
-		<h1 align="center">Crie seu personagem</h1>
-		<form>
-			<label for="nome">Nome:</label><br>
-				<input type="text" name="nome" min="1" required><br>
+</head>
+<body style="color: #FFD400; background-color: black;">
+	<a href="index.html"><small><mark>Voltar para o Inicio</mark></small></a><br><hr>
+	<h1 align="center">Crie seu personagem</h1>
+	<form>
+		<label for="nome">Nome:</label><br>
+			<input type="text" name="nome" min="1" required><br><br>
 
-			<label for="estreia">Estreia em:</label><br>
+		<label for="estreia">Estreia em:</label><br>
+			<input type="radio" name="estreia" id="newgeneration" checked>
+			<label for="newgeneration" a href="#newgeneration">New Generation</label><br>
+			<input type="radio" name="estreia" id="secondimpact">
+			<label for="secondimpact" a href="#secondimpact">Second Impact</label><br>
+			<input type="radio" name="estreia" id="thirdstrike">
+			<label for="thirdstrike" a href="#thirdstrike">Third Strike</label><br><br>
 
-				<input type="radio" name="estreia" checked>
-				<label for="newgeneration">New Generation</label><br>
+		<label for="arquetipo">Arquétipo:</label><br>
+			<input type="checkbox" name="shoto" id="shoto">
+			<label for="shoto" a href="#shoto">Shoto<br>
+			<input type="checkbox" name="midrange" id="midrange">
+			<label for="midrange" a href="#midrange">Mid-range<br>
+			<input type="checkbox" name="grappler" id="grappler">
+			<label for="grappler" a href="#grappler">Grappler<br>
+			<input type="checkbox" name="zoner" id="zoner">
+			<label for="zoner" a href="#zoner">Zoner<br><br>
 
-				<input type="radio" name="estreia">
-				<label for="secondimpact">Second Impact</label><br>
-
-				<input type="radio" name="estreia">
-				<label for="thirdstrike">Third Strike</label><br>
-
-	<br><button type="submit"><b><u>Criar</u></b></button>
+		<label for="cor">Cor Principal:</label><br>
+			<input type="color" value="#D12C08"><br>
+		<br><button type="submit"><b><u>Criar</u></b></button>
+	</form>
+</body>
+</html>
